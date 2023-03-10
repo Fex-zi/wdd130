@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+:root {
+    --primary-color: #264653;
+    --secondary-color: #2A9D8F;
+    --accent1-color: #F4A261;
+    --accent2-color: #E76F51;
+  
+    --heading-font: 'Merriweather', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+  
+    --nav-background-color: #264653;
+    --nav-link-color: #2A9D8F;
+    --nav-hover-link-color: #F4A261;
+    --nav-hover-background-color: #E76F51;
+  }
+
+  .hero {
+    position: relative;
+    height: 400px;
+  }
+  
+  .hero img {
+    position: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    
+  }
+  
+  
