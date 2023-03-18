@@ -1,63 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
 
 :root {
-    --primary-color: #264653;
-    --secondary-color: #2A9D8F;
-    --accent1-color: #F4A261;
-    --accent2-color: #E76F51;
+    --primary-color: #E63946;
+    --secondary-color:#457B9D;
+    --accent1-color: #1D3557;
+    --accent2-color: #A8DADC;
   
     --heading-font: 'Merriweather', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
   
-    --nav-background-color: #264653;
-    --nav-link-color: #2A9D8F;
-    --nav-hover-link-color: #F4A261;
-    --nav-hover-background-color: #E76F51;
+    --nav-background-color: #1D3557;
+    --nav-link-color: #457B9D;
+    --nav-hover-link-color: #E63946;
+    --nav-hover-background-color: #A8DADC;
+  }
+  @media (max-width: 768px) {
+    .hero {
+      height: 300px;
+    }
+    
+    .hero-title {
+      font-size: 24px;
+    }
+    
+    .article-image {
+      width: 180px;
+      height: 120px;
+    }
   }
 
-  .hero {
-    position: relative;
-    height: 400px;
-  }
-  
-  .hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    
-  }
-  
-  .hero-title {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 28px;
-    color: white;
-    text-shadow: 2px 2px 4px #0000;
-  }
-  
-  .hero-article {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 97%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    opacity: 0.9;
-  }
-  
-  .article-image {
-    float: right;
-    margin-left: 20px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }
+.hero {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+}
+
+.hero-title {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: white;
+  text-shadow: 2px 2px 4px #0000;
+}
+
+.hero-article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 97%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0.9;
+}
+
+.article-image {
+  float: right;
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 0 30px gray;
+  border-radius: 4px;
+}
   
   h1, h2 {
     font-family: var(--heading-font);
@@ -65,29 +81,120 @@
   }
 
   header {
-    padding: 20px;
+    padding: 13px;
     background-color: var(--accent1-color);
+    
   }
-
 
   nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+   
   }
-  
   nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
+    
   }
   
   nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+    color: #fff;
   }
   
   nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
   }
+
+  header, .grid, footer {
+    max-width: 1000rem;
+    margin: 0 auto;
+  }
+
+    .grid {
+      display: grid;
+      align-items: center;
+    }
+    
+    header nav {
+      grid-column: 2/3;
+      margin: 1rem;
+      justify-content: space-evenly;
+      padding-right: 12rem;
+       }
+    
+    header img {
+      
+      position: relative;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding-left: 20rem;
+      
+      
+    }
+
+section p {
+  grid-column: 2/3;
+      margin: 1rem;
+      justify-content: space-evenly;
+      padding-right: 12rem;
+}
+.history {
+  position: relative;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding-left: 20rem;
+
+}
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: var(--paragraph-font);
+  padding: 3px;
+  text-align: center;
+}
+figure {
+  
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+/* Display images in grid form*/
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 20px; /* gap between images */
+}
+.image-grid img {
+  width: 100%;
+  height: auto;
+  box-shadow: 3px 3px 30px gray;
+  border-radius: 4px;
+}
+.h2set {
+  text-align: center; /*move item to center */
+  
+}
+
+
+.sociallinks p {
+  text-align: center;
+  flex-grow: 1;
+  color: #fff ;
+}
+
+
+.sociallinks img {
+  width: 30px; /* Set the width of the images */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 10px; /* Add some space between the images */ 
+  
+}
