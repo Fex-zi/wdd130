@@ -283,3 +283,8 @@ hr{
   background-color: var(--secondary-color);
   }
   
+  iframe{
+    border:0;
+    width:70%;
+    height:380px;
+  }
