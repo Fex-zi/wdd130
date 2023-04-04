@@ -15,6 +15,10 @@
     --nav-hover-background-color: #A8DADC;
   }
   
+  body{
+    margin: 0;
+    padding: 0;
+  }
 
 .hero {
   position: relative;
@@ -184,9 +188,14 @@ figcaption {
   display: inline-block;
   max-width: 23rem;
   height: 20rem;
-  box-shadow: 3px 3px 30px gray;
+  box-shadow: 1px 1px 15px gray;
   border-radius: 4px;
 }
+
+.image-grid img:hover{
+  box-shadow: 2px 2px 25px gray;
+}
+
 .h2set {
   text-align: center; /*move item to center */
   
@@ -215,7 +224,7 @@ hr{
     
 #design {
   margin-bottom: 20px;
-  background: #808080;
+  
   width:  500px;
   align-items: center;
   display: flex;
@@ -226,13 +235,16 @@ hr{
   padding: 5px;
   font-size: 20px;
   text-align: left;
-  border-radius: 10px;
-  color: #fff;
-  box-shadow: 0 0 30px gray;
-  
-  
+  border-radius: 6px;
+  color: var(--nav-link-color);
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
   }
   
+  #design:hover{
+    box-shadow: 2px 2px 20px gray;
+  
+  }
    
   #p1 {
       font-size: 23px;
@@ -251,7 +263,7 @@ hr{
   width: 90%;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: 1px solid #860c5e;
   margin-bottom: 10px;
   
   
@@ -276,6 +288,7 @@ hr{
   align-items: center;
   margin-left: 15%;
   width: 350px;
+  font-size: 20px;
   
   }
   
@@ -287,4 +300,105 @@ hr{
     border:0;
     width:70%;
     height:380px;
+  }
+
+  /*Trips  */
+
+  .cta {
+    text-align: center;
+  }
+
+  .cta-btn{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
+    font-size: 30px;
+    width: 350px;
+  }
+
+  .cta-btn:hover{
+    background-color: var(--accent1-color);
+    box-shadow: 2px 2px 20px gray;
+  }
+
+  .features{
+    padding: 10px 0;
+    margin: 40px;
+    height: 500px;
+    margin-top: 3px;
+    position: relative;
+    
+    
+  }
+
+  .box-img img{
+    
+  width: 400px;
+  border-radius: 3px;
+  }
+
+  .box-img img:hover{
+    box-shadow: 2px 2px 20px gray;
+  }
+
+  .price{
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(37,73,214,0.18);
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+  }
+
+  .box-img{
+    position: relative;
+    
+  }
+  
+  .details{
+    width: 350px;
+    padding: 20px;
+    margin-top: 7px;
+    text-align: justify;
+    
+   
+    
+  }
+
+  #span{
+   position: relative;
+   margin: 7rem;
+   justify-content: space-evenly;
+   color: var(--primary-color);
+   font-size: 20px;
+   bottom: 7px;
+    
+  }
+
+  .box{
+    box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+    margin-bottom: 30px;
+    width: 400px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+
+  .box:hover{
+     box-shadow: 2px 2px 20px gray;
+  }
+
+  .col-t-4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
   }
