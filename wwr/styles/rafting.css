@@ -57,6 +57,7 @@
   opacity: 0.9;
 }
 
+
 .article-image {
   float: right;
   width: 220px;
@@ -97,6 +98,7 @@ h3 a:hover{
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
+    transition: .5s;
     
   }
   
@@ -104,7 +106,7 @@ h3 a:hover{
     color: #fff;
   }
   
-  nav a:hover {
+  nav a:hover, nav a:active {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
   }
@@ -137,8 +139,8 @@ h3 a:hover{
       position: relative;
       grid-column: 1/2;
       grid-row: 1/2;
-      padding-left: 20rem;
-      
+      margin-left: 20rem;
+      border-radius: 50%;
       
     }
 
@@ -239,6 +241,7 @@ hr{
   color: var(--nav-link-color);
   cursor: pointer;
   box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+  transition: .5s;
   }
   
   #design:hover{
@@ -289,6 +292,7 @@ hr{
   margin-left: 15%;
   width: 350px;
   font-size: 20px;
+  transition: .5s;
   
   }
   
@@ -319,6 +323,7 @@ hr{
     align-items: center;
     font-size: 30px;
     width: 350px;
+    transition: .5s;
   }
 
   .cta-btn:hover{
@@ -391,6 +396,7 @@ hr{
     width: 400px;
     border-radius: 4px;
     cursor: pointer;
+    transition: .5s;
     
   }
 
@@ -401,4 +407,148 @@ hr{
   .col-t-4{
     display: grid;
     grid-template-columns: repeat(3, 1fr)
+  }
+
+  /*--index--*/
+  .p-m{
+    margin: 0;
+  }
+
+  .font-h2{
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    color: #fff;
+
+  }
+
+  .home{
+    position: relative;
+    width: 85.2%;
+    height: 100vh;
+    background: url('/wwr/images/6.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0;
+  }
+
+  .content{
+    max-width: 600px;
+    color: #fff;
+    
+  }
+
+  .content a{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    font-weight: 500;
+    border-radius: 40px;
+    padding: 10px 40px;
+    transition: .5s;
+  }
+
+  .content a:hover{
+    background: var(--primary-color);
+  }
+
+  .p-m{
+    margin: 10px 0 40px;
+  }
+  .sign-form{
+    position: relative;
+    width: 440px;
+  }
+  .font-h2-new{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+  }
+
+  .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color:#fff;
+    text-align: center;
+  }
+
+  .input-box label{
+    position: absolute;
+    font-size: 1em;
+    top:50%;
+    left: 45px;
+    color: #fff;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: .5s;
+
+  }
+
+  .input-box input:focus~label,.input-box input:valid~label {
+    font-size: .8em;
+    top: -14px;
+    left: 17px;
+
+  }
+  .icon{
+    position: absolute; 
+    top: 14px;
+    left: 15px;
+    font-size: 1.2em;
+    color: #fff;
+
+
+  }
+
+  .check-box{
+    font-size: .9em;
+    color: #fff;
+    font-weight: 500;
+    margin: -25px 0 15px;
+    
+  }
+  .check-box a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .check-box a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .chk-bx-inp{
+    accent-color: #1e0b04;
+    margin-right: 3px;
+  }
+
+  .btn{
+    width: 100%;
+    height: 50px;
+    border:none;
+    outline:none;
+    border-radius: 40px;
+    background: linear-gradient(90deg, var(--nav-background-color), var(--primary-color));
+    box-shadow: 0 7px 8px #000500;
+    cursor:pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+  }
+
+  .btn:hover{
+    box-shadow: 0 11px 13px #000500;
   }
