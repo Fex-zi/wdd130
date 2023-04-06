@@ -387,13 +387,14 @@ hr{
     
   }
 
-  #span{
+  #span1, #span2, #span3{
    position: relative;
    margin: 7rem;
    justify-content: space-evenly;
    color: var(--primary-color);
    font-size: 20px;
    bottom: 7px;
+   
     
   }
 
@@ -559,3 +560,30 @@ hr{
   .btn:hover{
     box-shadow: 0 11px 13px #000500;
   }
+
+  .star{
+      
+      background: #fff;
+      font-size: 15px;
+      color: #ffd700;
+      border-radius: 3px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(37,73,214,0.18);
+      position: absolute;
+      left: 20px;
+      bottom: -20px;
+  }
+
+  .star-trip{
+      
+    background: #fff;
+    font-size: 18px;
+    color: #ffd700;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(37,73,214,0.18);
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    float: right;
+}
