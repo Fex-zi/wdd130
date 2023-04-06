@@ -106,11 +106,18 @@ h3 a:hover{
     color: #fff;
   }
   
-  nav a:hover, nav a:active {
+  nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    border-radius: 4px;
+    box-shadow: 0 7px 8px #061216;
   }
 
+  .active-link {
+    color: var(--nav-hover-link-color);
+    border-radius: 4px;
+    background-color: var(--nav-hover-background-color);
+  }
   /*header, .grid,footer {
     max-width: 1000rem;
     margin: 0 auto;
@@ -425,7 +432,7 @@ hr{
     position: relative;
     width: 85.2%;
     height: 100vh;
-    background: url('/wwr/images/6.jpg') no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
